@@ -1,5 +1,15 @@
 # Contributing to legateboost
 
+## Installing Development Dependencies
+
+```
+mamba create -n legate python
+mamba activate legate
+mamba install -c legate -c conda-forge legate-core cunumeric cuda cuda-version=12.5 build cmake scikit-build scikit-learn hypothesis 'pytest<8' notebook 'numpy<2' mypy openblas
+pip install matplotlib seaborn xgboost
+sh ./build.sh 
+```
+
 For editable installation
 ```
 pip install -e .
